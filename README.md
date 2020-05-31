@@ -1,12 +1,12 @@
-![alt text](https://github.com/estherjsuh/availability_proj/blob/master/static/tech.png)
+![alt text](https://github.com/estherjsuh/webscraper/blob/master/static/tech.png)
 
 
-# Product Availability
+# Product Availability Webscraper
 
 ## Created by Esther Suh
 
 ## Description
-Web scraper takes scraps price and availability data from one of my favorite ecommerce website, cleanses the data, loads the data to Postgres and sends me an email (scheduled daily at 11AM through Cron).
+Web scraper scraps price and availability data from one of my favorite ecommerce website, cleanses the data, loads the data to Postgres and sends me an email (scheduled daily at 11AM through Cron).
 
 URL has been deliberately hidden for privacy reasons.
 
@@ -27,9 +27,9 @@ Scheduling cron jobs with macOS Catalina.
 
 ```
 #!/bin/sh
-source /Users/esther/Desktop/product_availability/venv/bin/activate
+source /Users/esther/Desktop/webscraper/venv/bin/activate
 
-python /Users/esther/Desktop/product_availability/load.py
+python /Users/esther/Desktop/webscraper/load.py
 ```
 
 2. Add cronjob:
